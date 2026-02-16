@@ -1,0 +1,132 @@
+@import 'style.css';
+
+/* 
+   Light Mode Theme Overrides
+*/
+body.light-mode {
+    --bg-color: #f5f6fa;
+    --bg-alt: #ffffff;
+    --text-primary: #1a1a2e;
+    --text-secondary: #5e6472;
+    --card-bg: #ffffff;
+    --border-color: #e6e6e6;
+    --radius: 12px;
+}
+
+body.light-mode .section-title::after {
+    background: var(--accent);
+}
+
+body.light-mode .project-card,
+body.light-mode .cert-card,
+body.light-mode .education-block,
+body.light-mode .skill-category,
+body.light-mode .code-snippet-card,
+body.light-mode .contact-wrapper,
+body.light-mode .stat-card {
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e1e4e8;
+}
+
+body.light-mode .header {
+    background-color: rgba(245, 246, 250, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .nav-menu {
+    background-color: #f5f6fa;
+}
+
+body.light-mode .hamburger .bar {
+    background-color: #1a1a2e;
+}
+
+body.light-mode .nav-link {
+    color: #5e6472;
+}
+
+body.light-mode .nav-link:hover,
+body.light-mode .nav-link.active {
+    color: var(--accent);
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-item {
+    display: flex;
+    align-items: center;
+}
+
+.theme-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    padding: 5px;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.theme-btn:hover {
+    background: rgba(94, 106, 210, 0.1);
+    color: var(--accent);
+}
+
+body.light-mode .theme-btn:hover {
+    background: rgba(94, 106, 210, 0.1);
+}
+
+/* Adjust contact form inputs for light mode */
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+    background: #f9fafb;
+    border: 1px solid #e1e4e8;
+    color: #1a1a2e;
+}
+
+body.light-mode .form-group input:focus,
+body.light-mode .form-group textarea:focus {
+    background: #ffffff;
+    border-color: var(--accent);
+}
+
+/* Footer adjusted */
+body.light-mode .footer {
+    background: #ffffff;
+    border-top: 1px solid #e1e4e8;
+    color: #5e6472;
+}
+
+/* Project Image Placeholders on Light Mode */
+body.light-mode .project-image {
+    background: #f0f2f5;
+    color: #5e6472;
+}
+
+/* Adjust Skills Progress Bars background */
+body.light-mode .progress-bar {
+    background: #e1e4e8;
+}
+
+body.light-mode .tag {
+    background: #e1e4e8;
+    color: #1a1a2e;
+}
+
+body.light-mode .tag:hover {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+/* Hero Gradient Text adjustment */
+body.light-mode .hero-name {
+    background: linear-gradient(to right, #1a1a2e 0%, #5e6472 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
