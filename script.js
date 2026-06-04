@@ -8,7 +8,7 @@ AOS.init({
 
 // Typing Text Animation
 const typed = new Typed('.typing-text', {
-    strings: ['AI/ML Engineer', 'Python Developer', 'Data Analyst', 'Tech Enthusiast'],
+    strings: ['Software Engineer', 'Backend Developer', 'AI/ML Developer', 'Python Developer'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
